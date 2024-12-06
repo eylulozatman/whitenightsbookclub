@@ -1,0 +1,14 @@
+ {
+    "type": "service_account",
+    "project_id": "whitenightsbookclub",
+    "private_key_id": "fc5a14fec44e3f521e228293bfe6d0e08a031b09",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBTzeE8jl9iiX3\nt+oD7Q6K7lF54razKWBYqSqjiw1ukDa9FlvSr5RWS8YDPGuMNLKQiBHJbKWAoGX6\nRNjVqi+Ce/bcCKy70ZF61/RTRF09O/hp3J8U64HHVg9txkmVagjPRHFCjPkWF1Ry\nCc8cjeSiPpyFPw+ieA91HoJ3t5N+lUbBLRbgRQZTWgoYbcdJi9GiNhMX5s1dIcQ0\n0yfmy/bLFC9aptiGR263FuTs4vHPDxhNP/+EwVNRZJoc5u0F3qbGr4xO/OkwnGwF\n86ewnndTgZt0bZknYA1XWJWFJPvrFioFP1rpaTCqXMM1d2+7jLDHcsykh3F3qWzj\ndmlrtLE7AgMBAAECggEARalHZ5hmkU/0aLWVFj8aK4TARb0me5/ggXLM08yrVXmQ\n0Ek7Y8w0F3kM7WObmhXvd1ghmMWXSqgCt9KRlUXUAyCrEBXsMW7PD0a9XDhZpVR0\nK6n+hepshSoFO1jmcXqZnB+c9Q+aP5S+sK3KPg8AIluPyhC0kKbVYy5Qc9XqyAVg\ntfp5izPNQGpORQYW39/6bcn9VMU/7/J+5zJmH/zFe+k2r5CIusb3gKZGpCZtpaJI\nSYPcBztV+pRmR+9RoVFFBqLoP4iYtqgzvug9z5UamGEtNKWiSGq8gMZGlir8gkJe\nGP78hWcmH3XVA2MiEGraR+4i3M+4GvCtq5JkTlCRaQKBgQDroTwCi43c9+O82XR6\nVus5NmyJrsQk7aLpaZDtqWlNqAI8tagBD7rTiin/GiFrOGLYkHMDQw1j9dZSJBjL\nWO5UsF+5DXYR221uvU+KFVMTdybaAPqoNYG+q1Bl3SDAOuzKc38mdUnnZykPph2i\n5cFpnaesS3LV0WJIL+05ixAe9wKBgQDSBWHvqfRpV2QmFCoGoZ/NAbd8yPvuWWDB\nLCEephCkjiW+0pLlsTHt8Lw2twcClSfzsE/V8saDCbZbWX0F7hNGWU00CdWT4r1M\nfOYvtfM6sobbGXiGPR31ZuYq3EHnRvFGNiIXmB/PxqTfgGP2fGZ+g0q7oynHW9Kc\nSt4YZuo63QKBgQDd1oXOC587K3MQyFYeHBkHW1LiaVSnQ8e+IzJcXsQSZZv9ljUf\nErUdFhYl428VKBf/tjdiGc3Qj5IA8ZUaVZbEyuzEJ4VCmKi1uqvY3+zABczhMEzM\n8ts9LMLbtE1yTcfDbuuFxKUYpIoG/qkmRVNL4S8MSlhKMABs4Bpis6cwzwKBgApC\nCwuKsI5on1Kgz4CtakG4IL8ujeeRZAFrZ16427092Cge3t/rLLYjeP3vKJ9+q4ni\nhbO8fOevlMGXeFzOyRA5kmTFSjJD890FiLSx3WRzjdSrxNBBsfHnibx0L5/dPjGg\nuT+PxZX/bNQh0EAcyWDKht7tVEARgxLxMTHd7PjdAoGAKCBINmEGfA1AFkZeeLf/\nbks2Xu/28i3FSr2Ed3c3eBafuwfJOXW4kHx2N2MLp/s3tGXXYevuAqml1dQI8rze\ncMN3RjPGYkNQKYYxP1OzhP2HfiGxyut/8N5nuzZ/Ain70qK6q957MudKT95818or\nA3uW6kQlStDKprhOHk3Yirc=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-s801v@whitenightsbookclub.iam.gserviceaccount.com",
+    "client_id": "113365778061912977598",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-s801v%40whitenightsbookclub.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
