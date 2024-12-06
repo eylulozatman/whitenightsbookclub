@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #1d2023;
+    --accent-color: #434345;
+    --accent2-color: #7c7c68c2;
+    --input-bg-color: #ffffffb7;
+    --input-border-color: #8b8a8a;
+}
+/* Genel sayfa düzeni */
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.mainContent {
+    width: 100%; /* Ekran genişliğine göre ayarlandı */
+    max-width: 800px; /* Büyük ekranlarda genişlik sınırlandı */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    gap: 2vh; 
+    margin-bottom: 10%;
+    
+}
+
+/* Başlık */
+h1 {
+    font-size: 4.5vh; 
+    color: var(--accent-color);
+    margin: 2vh 0; 
+}
+
+/* Bağlantılar */
+a {
+    color: var(--accent-color);
+    font-size: 3.5vh; /* Ekran yüksekliğine göre */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;   
+    margin-right: 2vw;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--accent2-color); /* Vurgulu renk */
+}
+
+@media screen and (max-width: 480px) {
+
+    
+    .mainContent{
+
+        justify-content: center;
+        align-items: center;
+    }
+    .linkdiv a  {
+     
+        border: 1vw solid var(--accent2-color);
+        display: block; /* Blok düzende alt alta dizilir */
+        margin-right: 0; /* Sağdan boşluk kaldırılır */
+        margin-bottom: 1.5vh; 
+        font-size: 2em;
+        padding: 1vw;
+    }
+}

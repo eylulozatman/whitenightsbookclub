@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Book</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add-book.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        
+        
+
+        <h2> New Book Review </h2>
+       
+        <form method="POST">
+
+            <div id="title-auth-div">
+                <input type="text" name="title" placeholder="Title" required>
+                <input type="text" name="author" placeholder="Author" required>
+            </div>
+
+            <div id="score-div">
+                <label for="rating">Rate this book (1-10):</label>
+                <select name="rating" id="rating" required>
+                    {% for i in range(1, 11) %}
+                    <option value="{{ i }}">{{ i }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div id="summary-div">
+                <textarea name="review" placeholder="Review"></textarea>
+            </div>
+
+            <div id="url-div">
+                <input type="url" id="urlinput" name="cover_image_url" placeholder="Cover Image URL">
+            </div>
+         
+  
+            <button type="submit">publish book review</button>
+
+    </form>
+</div>
+    
+</body>
+</html>

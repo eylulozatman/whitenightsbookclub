@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #1d2023; /* Dark background color */
+    --accent-color: #434345; /* Accent color for container background */
+    --accent2-color: #7c7c6890; /* Secondary accent color */
+    --input-bg-color: #ffffffb7; /* Input background color */
+    --input-border-color: #8b8a8a; /* Input border color */
+    --highlight-color: #f1c40f77; /* Highlight color */
+    --link-hover-color: #e67e22; /* Hover color for links */
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h1 {
+    font-size: 2.5em;
+    color: var(--highlight-color);
+}
+
+.profile-header p {
+    font-size: 1.2em;
+    color: var(--accent2-color);
+}
+
+.books-section h2 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+}
+
+.book h3 {
+    font-size: 1.5em;
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.book a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: var(--link-hover-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid var(--link-hover-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book a:hover {
+    background-color: var(--link-hover-color);
+    color: #fff;
+}
+
+.profile-container a {
+    display: inline-block;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--highlight-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-container a:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+}

@@ -1,0 +1,213 @@
+/* Root variables */
+:root {
+    --primary-color: #1d2023; /* Dark background color */
+    --accent-color: #434345; /* Accent color for container background */
+    --accent2-color: #7c7c6890; /* Secondary accent color */
+    --input-bg-color: #ffffffb7; /* Input background color */
+    --input-border-color: #8b8a8a; /* Input border color */
+    --highlight-color: #f1c40f77; /* Highlight color */
+    --link-hover-color: #a56935a5; /* Hover color for links */
+}
+
+/* General body styling */
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Home link styling */
+.home-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+}
+
+.home-link a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+a {
+    font-size: larger;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent2-color);
+}
+
+
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--accent2-color);
+    color: var(--input-bg-color);
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: var(--highlight-color);
+}
+
+
+/* Booklist styling */
+.booklist {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual book card styling */
+.book {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--accent2-color);
+    position: relative; /* Position relative to place date in the top-right corner */
+}
+
+/* Book title styling */
+.book h3 {
+    margin: 0;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--highlight-color); /* Emphasize the title */
+}
+
+/* Book description styling */
+.book p {
+    margin: 10px 0 0 0;
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+
+/* Publisher styling */
+.book .publisher {
+    margin-top: 10px;
+    font-size: 1em;
+    font-style: normal;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalize publisher name for emphasis */
+}
+
+/* Book link styling */
+.book a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Date styling */
+.book .added-date {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 0.9em;
+    color: var(--input-border-color);
+    font-weight: normal;
+    text-transform: none;
+}
+
+
+.book a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.pagination a:hover {
+    color: var(--link-hover-color);
+}
+
+.pagination span {
+    margin: 0 15px;
+    color: var(--highlight-color);
+    font-size: 1.1em;
+}
+
+/* Input fields styling */
+input, textarea {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--highlight-color);
+    outline: none;
+}
+
+/* Buttons styling */
+button {
+    background-color: var(--highlight-color);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
