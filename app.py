@@ -5,6 +5,9 @@ from firebase_admin.auth import create_user, verify_id_token, get_user_by_email
 from firebase_admin import auth
 from database import db
 from datetime import datetime
+import firebase_admin
+from firebase_admin.exceptions import FirebaseError
+
 
 app = Flask(__name__)
 app.config.from_object('config.Config')  # Burada config.py'den tüm ayarları alıyoruz
@@ -82,11 +85,12 @@ def login():
             session['user'] = user.uid  # Oturum açan kullanıcının UID'si
             flash("Login successful!", "success")
             return redirect(url_for('homepage'))
-        except auth.AuthError as e:
+        except firebase_admin.exceptions.FirebaseError as e:
             flash(f"Authentication error: {e}", "danger")
             print("error in login")
 
     return render_template('pages/login.html')
+
 
 
 @app.route('/logout')
