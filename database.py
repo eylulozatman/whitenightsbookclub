@@ -1,10 +1,10 @@
 import firebase_admin
 from firebase_admin import credentials, firestore
-from config import Config
+from config import ConfigClass
 
-# Firebase bağlantısını başlat
-cred = credentials.Certificate(Config.FIREBASE_CREDENTIALS)
+# Firebase bağlantısı
+cred = credentials.Certificate(ConfigClass.FIREBASE_CREDENTIALS)
 firebase_admin.initialize_app(cred)
 
-# Firestore veritabanı nesnesi
+# Firestore veritabanı örneği
 db = firestore.client()

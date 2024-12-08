@@ -7,10 +7,11 @@ from database import db
 from datetime import datetime
 import firebase_admin
 from firebase_admin.exceptions import FirebaseError
-
+import os
+from config import ConfigClass  # Load the appropriate configuration based on the environment
 
 app = Flask(__name__)
-app.config.from_object('config.Config')  # Burada config.py'den tüm ayarları alıyoruz
+app.config.from_object(ConfigClass)  # Apply the selected configuration
 Session(app)
 
 login_manager = LoginManager()
@@ -34,6 +35,7 @@ def load_user(user_id):
 @app.route('/')
 def welcome():
     return render_template('pages/welcome-page.html')
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():

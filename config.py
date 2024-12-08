@@ -1,9 +1,24 @@
-import os
+import os 
 import json
+from dotenv import load_dotenv
+
+# .env dosyasındaki değişkenleri yükle
+load_dotenv()
 
 class Config:
-    # Firebase servis anahtarını çevresel değişkenden yükleme
-    FIREBASE_CREDENTIALS = json.loads(os.environ.get("FIREBASE_KEY", "{}"))
-    
-    SECRET_KEY = os.urandom(24)  # Güvenli bir secret key oluşturuyoruz
-    SESSION_TYPE = 'filesystem'  # session için filesystem kullanacağız
+    SECRET_KEY = os.urandom(24)
+    SESSION_TYPE = 'filesystem'
+
+class DevelopmentConfig(Config):
+    FIREBASE_CREDENTIALS = os.path.join(os.path.dirname(__file__), 'firebasekey.json')  # Yerel firebase_key.json
+    SECRET_KEY = os.urandom(24)
+    SESSION_TYPE = 'filesystem'
+
+class ProductionConfig(Config):
+    FIREBASE_CREDENTIALS = json.loads(os.getenv('FIREBASE_KEY_PROD', "{}"))  # Üretimde ortam değişkeni
+
+# Ortam değişkenine göre uygun yapılandırmayı seç
+if os.getenv('FLASK_ENV') == 'production':
+    ConfigClass = ProductionConfig
+else:
+    ConfigClass = DevelopmentConfig
