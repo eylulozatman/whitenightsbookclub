@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #1d2023;
+    --accent-color: #434345;
+    --accent2-color: #7c7c68c2;
+    --input-bg-color: #ffffffb7;
+    --input-border-color: #8b8a8a;
+}
+
+/* Genel sayfa düzeni */
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 70%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.homebtn a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.homebtn a:hover {
+    color: var(--accent2-color)
+}
+
+h3{
+
+    color: var(--primary-color);
+}
+
+form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg-color);
+}
+
+form button {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent2-color)
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: (var(--accent2-color))
+}

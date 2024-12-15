@@ -1,0 +1,90 @@
+/* book-detail.css */
+
+:root {
+    --primary-color: #1d2023; /* Dark background color */
+    --accent-color: #434345; /* Accent color for container background */
+    --accent2-color: #7c7c6890; /* Secondary accent color */
+    --input-bg-color: #ffffffb7; /* Input background color */
+    --input-border-color: #8b8a8a; /* Input border color */
+    --highlight-color: #f1c40f77; /* Highlight color */
+    --link-hover-color: #68463e; /* Hover color for links */
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Konumlandırmayı container'a göre yapabilmek için relative */
+}
+
+
+.book-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.book-detail img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.book-detail h2 {
+    font-size: 2em;
+    color: var(--highlight-color);
+}
+
+.book-detail p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.book-detail a {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-size: 1.1em;
+}
+
+
+/* Container içinde buton sağ üst köşeye yerleştirilecek */
+
+#like-form {
+    position: absolute;
+    top: 20px;  /* Üstten 20px mesafe */
+    right: 20px; /* Sağdan 20px mesafe */
+    margin-bottom: 4%;
+}
+
+.like-button {
+    background-color: var(--accent2-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.like-button.liked {
+    background-color: rgb(99, 69, 69);  /* Beğenilen kitaplar için kırmızı renk */
+}
+
+.like-button:hover {
+    background-color: rgb(99, 69, 69);
+}

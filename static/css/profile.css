@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #1d2023; /* Background color */
+    --accent-color: #434345; /* Card background */
+    --secondary-color: #7c7c6890; /* Subtle accents */
+    --text-color: #ffffff; /* Default text color */
+    --highlight-color: #f1c40f; /* Highlight elements */
+    --hover-color: #e67e22; /* Link and hover effect */
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 14px; /* Daha kompakt görünüm için küçültülmüş yazı boyutu */
+}
+
+.profile-container {
+    max-width: 1000px; /* Daha dar bir genişlik */
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 1.8rem; /* Başlık boyutunu küçült */
+    color: var(--highlight-color);
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.books-section {
+    margin-top: 15px;
+}
+
+.books-section .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Kart genişliğini küçült */
+    gap: 15px;
+}
+
+.book {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.book h3 {
+    font-size: 1rem; /* Kart başlığı boyutunu küçült */
+    color: var(--highlight-color);
+    margin-bottom: 5px;
+}
+
+.book p {
+    font-size: 0.8rem; /* Kart içeriği boyutunu küçült */
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.book a {
+    display: inline-block;
+    font-size: 0.8rem; /* Link boyutunu küçült */
+    color: var(--hover-color);
+    text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid var(--hover-color);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book a:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+.profile-container a {
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    max-width: 150px; /* Geri dönüş linkini daralt */
+    font-size: 0.9rem;
+    color: var(--highlight-color);
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid var(--highlight-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-container a:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}

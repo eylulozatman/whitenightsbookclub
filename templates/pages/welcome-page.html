@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome-page.css') }}">
+
+</head>
+<body>
+
+    <div class="mainContent">
+        <h1>Welcome to the White Nights Book Club</h1>
+        <div class="linkdiv">
+            <a href="{{ url_for('homepage') }}">Continue as Guest</a> 
+            <a href="{{ url_for('register') }}">Register</a> 
+            <a href="{{ url_for('login') }}">Login</a>
+        </div>
+     
+    </div>
+  
+
+   
+</body>
+</html>

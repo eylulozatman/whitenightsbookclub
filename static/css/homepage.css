@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #1d2023;
+    --accent-color: #434345;
+    --accent2-color: #7c7c6890;
+    --input-bg-color: #ffffffb7;
+    --input-border-color: #8b8a8a;
+    --highlight-color: #f1c40f77;
+    --link-hover-color: #a56935a5;
+}
+
+/* General body styling */
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 14px; /* Kompakt görünüm için küçültüldü */
+}
+
+/* Container styling */
+.container {
+    padding: 20px;
+    max-width: 900px; /* Daha dar konteyner */
+    margin: 20px auto;
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Home link styling */
+.home-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1em; /* Daha kompakt font boyutu */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Margin küçültüldü */
+    transition: color 0.3s ease;
+}
+
+.home-link a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+a {
+    font-size: 1em; /* Küçültüldü */
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent2-color);
+}
+
+/* Search bar */
+.search-bar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 60%; /* Daha dar arama çubuğu */
+    padding: 8px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: var(--accent2-color);
+    color: var(--input-bg-color);
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Booklist styling */
+.booklist {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Daha küçük gap */
+}
+
+/* Individual book card styling */
+.book {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--accent2-color);
+    position: relative;
+}
+
+/* Book title styling */
+.book h3 {
+    margin: 0;
+    font-size: 1.1em; /* Küçültülmüş başlık boyutu */
+    font-style: italic;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+/* Book description styling */
+.book p {
+    margin: 10px 0 0 0;
+    font-size: 1em; /* Küçültülmüş açıklama boyutu */
+    color: var(--primary-color);
+}
+
+/* Publisher styling */
+.book .publisher {
+    margin-top: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+/* Book link styling */
+.book a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.book a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Date styling */
+.book .added-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em; /* Küçük tarih yazı boyutu */
+    color: var(--input-border-color);
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.pagination a:hover {
+    color: var(--link-hover-color);
+}
+
+.pagination span {
+    margin: 0 10px;
+    color: var(--highlight-color);
+    font-size: 1em;
+}
+
+/* Input fields styling */
+input, textarea {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--highlight-color);
+    outline: none;
+}
+
+/* Buttons styling */
+button {
+    background-color: var(--highlight-color);
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}

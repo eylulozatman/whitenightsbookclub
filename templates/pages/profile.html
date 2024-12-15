@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ user['username'] }}'s Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>{{ user['username'] }}</h1>
+            <p>{{ user['bio'] }}</p> <!-- Kullanıcı biyografisi -->
+        </div>
+        
+        <div class="books-section">
+            {% if books %}
+                <div class="grid-container">
+                    {% for book in books %}
+                    <div class="book">
+                        <h3>{{ book['title'] }}</h3>
+                        <img src="{{ book['cover_image_url'] }}" alt="Book Cover">
+                        <p><strong>Review:</strong> {{ book['review'][:150] }}...</p> <!-- İlk 150 karakter -->
+                        <p><strong>Publisher:</strong> {{ book['publisher'] }}</p>
+                        <p><strong>Likes:</strong> {{ book['like_count'] }}</p>
+                        <a href="{{ url_for('book_detail', book_id=book['book_id']) }}">Read more</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p>You have not written any books yet.</p>
+            {% endif %}
+        </div>
+        
+        <a href="{{ url_for('homepage') }}">Back to Homepage</a>
+    </div>
+</body>
+</html>
